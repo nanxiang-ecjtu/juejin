@@ -49,8 +49,6 @@
         | - prod
         | - config.js
     | - dist 分发目录
-    | - document 文档
-    | - scripts 辅助脚本，例如ssh登录到测试环境
     | - src
         | - funcs   零碎的公共方法
         | - widgets 全局UI小组件
