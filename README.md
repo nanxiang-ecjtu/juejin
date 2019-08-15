@@ -41,7 +41,7 @@
 
 #### 开发结构
 ```bash
-| - data-stack
+| - juejin
     | - node_modules npm安装模块
     | - build 配置文件目录，主要包含Webpack配置
         | - base
