@@ -9,7 +9,13 @@
         "removeComments": false,
         "noImplicitAny": false,
         "esModuleInterop": true,
-        "jsx": "react"
+        "jsx": "react",
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {
+            "views": ["src/views/"]
+        }
     },
     "include": [
         "src/**/*"
