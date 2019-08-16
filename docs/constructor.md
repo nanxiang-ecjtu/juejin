@@ -237,9 +237,47 @@ React编写的过程中有一些其他特性，需要额外的plugin来支持
 
 ### TypeScript重构
 
+#### Typescript 相关依赖安装
+
+```javascript
+yarn add typescript --save-dev
+yarn add @types/react @types/react-dom @types/react-dom @types/react-redux --save-dev
+
+```
+
+#### tsconfig.json的配置
+
+touch tsconfig.json
+
+```json
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "jsx": "react"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
+```
+
 ### 组件拆分
 
 ------------------------------
 参考资料
 
 [browserslist](https://github.com/browserslist/browserslist#readme)
+[Eslint配置](https://eslint.org/docs/user-guide/configuring)
+[.eslintrc.json配置参考](https://www.cnblogs.com/mengfangui/p/9518718.html)

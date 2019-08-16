@@ -77,6 +77,14 @@ module.exports = {
           use: {
               loader: 'babel-loader'
           }
+      },
+      {
+        test: /\.ts(x?)$/,
+        use: [
+          {
+            loader: 'awesome-typescript-loader'
+          }
+        ]
       }
     ]
   },
@@ -100,7 +108,7 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: [".js", ".json", ".ts", ".tsx", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
     alias: {
       "@": path.join(__dirname, "./src"),
       views: path.join(__dirname, "./src/views")
